@@ -2,10 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import RestoreIcon from '@material-ui/icons/Restore';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
-import ReorderIcon from '@material-ui/icons/Reorder';
+import AcUnitSharpIcon from '@material-ui/icons/AcUnitSharp';
 
 const useStyles = makeStyles({
   root: {
@@ -14,7 +11,9 @@ const useStyles = makeStyles({
     right:0,
     left:0,
     backgroundColor: 'rgba(129,185,191,0.7)',
+    
   },
+  
   
 });
 
@@ -32,8 +31,8 @@ export default function Footer({screenConfig}) {
       showLabels
       className={classes.root}
     >
-      <BottomNavigationAction label="Global state" icon={<ReorderIcon />} />
-      <BottomNavigationAction label="Country state" icon={<ReorderIcon />} />
+      <BottomNavigationAction label="Global state" icon={<AcUnitSharpIcon />} />
+      <BottomNavigationAction label="Country state" icon={<AcUnitSharpIcon />} />
       
     </BottomNavigation>
   );
